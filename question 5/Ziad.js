@@ -1,8 +1,11 @@
 let score = +prompt("Enter your score :");
 let attendance = true;
-if (attendance = prompt("Do you have good attendance?") == true) {
+if (attendance = confirm("Do you have good attendance?") == true) {
   score += 3;
 }
+if( score <= 0 || score >= 100 ){
+  console.log("Invalid score")
+}else{
 if (score > 100) {
   score = 100;
 }
@@ -40,3 +43,4 @@ if (score >= 60) {
 console.log("Final Score: " + score);
 console.log("Grade: " + grade);
 console.log("Status: " + stat);
+}
