@@ -28,13 +28,17 @@ switch (true) {
   case score >= 60:
     grade = "D";
     break;
+    
+    case score >= 50:
+    grade = "D";
+    break;
 
   default:
     grade = "F";
 }
 let stat;
 
-if (score >= 60) {
+if (score >= 50) {
   stat = "PASS";
 } else {
   stat = "FAIL";
